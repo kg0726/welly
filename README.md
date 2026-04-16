@@ -4,7 +4,8 @@
 
 6인 팀 | 2025.01 ~ 02 (약 6주)
 
-📄 **[상세 포트폴리오 보기](https://www.notion.so/PROJECT_PORTFOLIO-3370380ca5bd80429e39dd223b7d99d2)**
+📄 **[상세 포트폴리오](https://www.notion.so/PROJECT_PORTFOLIO-3370380ca5bd80429e39dd223b7d99d2)**
+
 ---
 
 ## 담당 역할 (Backend)
