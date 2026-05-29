@@ -39,7 +39,7 @@ Spring Data JPA의 Fetch Join을 적용해 N+1개의 쿼리를 **단 1회로 통
 
 인프라 비용이 없는 Spring **로컬 캐시**(Caffeine)를 도입했습니다. 캐시 키를 `지역 + 나이`로 설계했는데, 사용자 ID 단위로 캐싱하면 적중률이 너무 낮기 때문입니다. 복지 정책의 자격 요건은 지역과 나이로 1차 필터링되므로 이 두 값을 키로 쓰면 많은 사용자가 캐시를 공유할 수 있어 **메모리 효율과 적중률**이 모두 높습니다.
 
-<img width="1839" height="3645" alt="image" src="https://github.com/user-attachments/assets/492785d0-afbd-4527-aeaa-f42f9db7af28" />
+<img width="900" height="1800" alt="image" src="https://github.com/user-attachments/assets/492785d0-afbd-4527-aeaa-f42f9db7af28" />
 
 
 메모리 누수를 막기 위해 `maximumSize`(개수 상한)와 `expireAfterWrite`(시간 만료) 정책을 함께 설정해 힙 사용량을 안전 범위 내로 통제했습니다. 사용자별로 달라지는 관심사 점수 계산은 캐싱 대상에서 제외하고 실시간으로 처리했습니다. 공통 요소인 자격 요건 후보군만 캐싱해 데이터 정확성과 성능을 모두 확보했습니다.
@@ -76,7 +76,7 @@ Spring Data JPA의 Fetch Join을 적용해 N+1개의 쿼리를 **단 1회로 통
 
 모든 양식을 DB화하려는 시도 대신, **LLM의 일반화 능력을 활용**하는 역발상을 했습니다. 사용자가 서류 작성을 힘들어하는 부분은 이름·주소 같은 단순 정보가 아니라 지원동기·계획서 같은 **서사 작성**이라고 분석했습니다.
 
-<img width="1780" height="2599" alt="image" src="https://github.com/user-attachments/assets/84d0b8c1-b1f9-4ad0-92c3-f1fd535c1e0c" />
+<img width="850" height="1250" alt="image" src="https://github.com/user-attachments/assets/84d0b8c1-b1f9-4ad0-92c3-f1fd535c1e0c" />
 
 물리적 서식 파일 대신 `정책 정보(Context) + 문서명(Title)`을 조합해 AI가 문서의 성격을 스스로 추론하도록 설계했습니다. 단순 정보는 공란 처리로 정확도를 확보하고, **고관여 정보만 AI가 집중 생성**합니다. 접수처·문의처 등 불필요한 행정 안내는 프롬프트 수준에서 필터링(Negative Prompting)해 실질적 제출용 본문만 추출했습니다.
 
