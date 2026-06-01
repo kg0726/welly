@@ -8,7 +8,7 @@
 | 항목 | 내용 |
 | --- | --- |
 | 서비스 | AI 기반 맞춤형 복지 정보 통합 서비스 |
-| 기간 | 2025.01 ~ 2025.02 (약 6주) |
+| 기간 | 2026.01 ~ 2026.02 (약 6주) |
 | 팀 구성 | 6인 (FE 3, BE 2, BE/INFRA 1) |
 | 담당 | 백엔드 (정책 API, 데이터 파이프라인, 추천·서류 API) |
 | 기술 스택 | Spring Boot, Spring Data JPA, MySQL, FastAPI, AWS, Docker, Jenkins |
