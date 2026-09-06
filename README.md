@@ -1,4 +1,5 @@
-> 본 Repository는 포트폴리오의 상세 설명을 위해 만들어졌습니다.
+> 본 Repository는 포트폴리오의 상세 설명을 위해 만들어졌습니다. 제가 구현한 주요 부분과 설명만이 기술되어 있습니다.<br>
+[프로젝트 Repo 바로가기](https://github.com/kg0726/first_project_welly)
 
 # 이웃집 웰리
 
